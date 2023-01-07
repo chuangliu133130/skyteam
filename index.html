@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/element-ui/2.15.9/theme-chalk/index.css">
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    #headdiv {
+      margin: 0px;
+      padding: 0px;
+      width: 1268px;
+      height: 60px;
+      background-color: #000000;
+      margin: 0px auto;
+      position: relative;
+      overflow: hidden;
+      box-sizing: border-box;
+      margin-top: -20px;
+      margin-left: -0px;
+      margin-right: -0px;
+    }
+
+    #navImg {
+      margin-top: 21px;
+      margin-left: 20px;
+      width: 96px;
+      height: 18px;
+      vertical-align: middle;
+      margin-right: 30px;
+
+    }
+
+    #topmenu {
+      float: right;
+      right: 100px;
+      position: relative;
+
+    }
+
+    .toptitlemenu {
+      text-decoration: none;
+      color: lightgray;
+      font-size: 13px;
+      line-height: 60px;
+      margin-right: 10px;
+    }
+
+    #hotthing {
+      color: white;
+      font-size: 15px;
+
+    }
+
+    .toptitlemenu:hover {
+      color: white;
+    }
+
+    #firstnav {
+      margin-left: 30px;
+    }
+
+    #searchinput {
+      width: 160px;
+      height: 30px;
+      border: none;
+      outline: none;
+      border-radius: 15px;
+      float: right;
+      right: 80px;
+      margin-top: 15px;
+      background-color: #000000;
+      position: relative;
+      color: white;
+    }
+
+    #sousuo {
+      position: absolute;
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      float: right;
+      right: 95px;
+      display: inline-block;
+      top: 20px;
+
+    }
+
+    #sousuo:hover {
+
+    }
+
+    #hotimg {
+      width: 40px;
+      height: 30px;
+      vertical-align: middle;
+    }
+
+    #loginbtn {
+      width: 80px;
+      height: 60px;
+      background-color: white;
+      color: lightgray;
+      background-color: #000000;
+      float: right;
+      right: 80px;
+      position: absolute;
+      border: none;
+
+    }
+
+    #aregisbtn:hover {
+      color: white;
+
+    }
+
+    #loginbtn:hover {
+      color: white;
+
+    }
+
+    #aregisbtn {
+      border: none;
+      width: 80px;
+      height: 60px;
+      background-color: white;
+      color: lightgray;
+      background-color: #000000;
+      float: right;
+      right: 20px;
+      position: absolute;
+    }
+
+    #atitleh1 {
+
+      margin-top: 0px;
+      padding: 0px;
+      background-color: #000000;
+      height: 60px;
+    }
+
+    #hottit {
+      margin-top: -0px;
+      padding: 0px;
+      background-color: rgba(31, 31, 31, 1);
+      height: 60px;
+      color: white;
+      line-height: 60px;
+      display: block;
+      width: 1268px;
+
+    }
+
+
+    #bgimg {
+      width: 1242px;
+      height: 720px;
+    }
+
+    #topbody {
+      position: relative;
+
+    }
+
+    #bgimg1 {
+      alignment: center;
+      align-content: space-between;
+      margin: -25px;
+      width: 1293px;
+      height: 720px;
+      float: left;
+    }
+
+    #subtit {
+      text-align: center;
+      font-weight: normal;
+      font-size: 20px;
+      float: left;
+      position: absolute;
+      color: white;
+      left: 300px;
+      top: 230px;
+      vertical-align: center;
+      horiz-align: center;
+    }
+
+    #bigtit {
+      font-size: 50px;
+      float: left;
+      position: absolute;
+      color: white;
+      left: 350px;
+      top: 150px;
+      vertical-align: center;
+      horiz-align: center;
+    }
+
+    #detailbtn {
+
+      text-align: center;
+      font-weight: normal;
+      font-size: 20px;
+      float: left;
+      position: absolute;
+      color: white;
+      left: 540px;
+      top: 320px;
+      vertical-align: center;
+      horiz-align: center;
+      border: 1px solid white;
+      width: 200px;
+      height: 50px;
+      border-radius: 30px;
+      background-color: Transparent;
+      background-repeat: no-repeat;
+      border: 1px solid white;
+      cursor: pointer;
+      overflow: hidden;
+
+
+    }
+
+    #bodycontent {
+      margin: 150px;
+    }
+
+    .tzs {
+      font-size: 30px;
+      display: inline-block;
+      width: 100%;
+      height: 80px;
+      margin-top: 15px;
+    }
+
+    .jxz {
+
+
+      align-content: center;
+      alignment: center;
+      font-size: 40px;
+      display: inline-block;
+      width: 100%;
+      height: 80px;
+      text-align: center;
+      line-height: 80px;
+      line-height: 80px;
+      margin-top: 40px;
+
+    }
+
+    #tzsdiv {
+      width: 100%;
+      height: 100%;
+      background-color: red;
+      float: left;
+      top: 0px;
+      left: 0px;
+    }
+
+
+    #osmoaction {
+      position: absolute;
+      border: none;
+      float: left;
+      top:180px;
+      left: 110px;
+      background-color: rgba(1,1,1,0);
+      font-weight: bold;
+      font-size: 20px;
+    }
+    #onecard{
+      position: relative;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+<h1 id="bg"></h1>
+<div id="app">
+  <div id="headdiv">
+    <img id="navImg" src="https://spcn-webfront.skypixel.com/skypixel/v2/public/assets/images/logo-cn.00c32c62.svg"
+         alt="">
+
+
+    <el-menu id="topmenu" style="width: 1000px;margin: 0 auto;border: 0" mode="horizontal"
+             background-color="#000000"
+             text-color="#fff" active-text-color="#fff">
+
+
+      <a id="firstnav" class="toptitlemenu" href="javascript:void(0)" @click="navfunc(1)">首页</a>
+      <a class="toptitlemenu" href="javascript:void(0)" @click="navfunc(2)">搜索</a>
+      <a class="toptitlemenu" href="javascript:void(0)" @click="navfunc(3)">标签</a>
+      <a class="toptitlemenu" href="javascript:void(0)" @click="navfunc(4)">摄影师</a>
+      <a class="toptitlemenu" href="javascript:void(0)" @click="navfunc(5)">签约摄影师招募</a>
+      <a class="toptitlemenu" id="hotthing" href="javascript:void(0)" @click="navfunc(6)">热门活动</a>
+      <a class="toptitlemenu" href="javascript:void(0)" @click="navfunc(7)">天空之城8周年摄影大赛</a>
+
+      <img id="hotimg"
+           src="https://spcn-webfront.skypixel.com/skypixel/v2/public/assets/images/hot-tag.77bd1bdf.svg" alt="">
+
+      <input type="text" id="searchinput">
+      <img id="sousuo" src="./img/sousuo.png" alt="">
+    </el-menu>
+    <input type="button" id="loginbtn" value="登陆" @click="loginclick()">
+    <input type="button" id="aregisbtn" value="注册" @click="regislick()">
+  </div>
+  <h1 id="hottit" align="center">热门活动</h1>
+  <div id="topbody">
+    <img id="bgimg1"
+         src="https://sp-webfront-cn.oss-cn-hangzhou.aliyuncs.com/skypixel/v2/public/website/assets/1672750595354-fee3f30a822094061317b10b7a4f7ef9.jpg"
+         alt="">
+
+    <b id="bigtit">新品体验馆招募:创造者计划</b>
+    <b id="subtit">如果你热爱影像，拥有创作梦想，并且需要一台相机稳定器。 我们期待你能成为<br>本次新品体验官，记录属于你的热爱。</b>
+    <input id="detailbtn" type="button" value="了解详情  >" @click="detailclick()">
+  </div>
+
+  <!--    进行中-->
+  <div id="bodycontent">
+    <b class="jxz">进行中</b>
+    <b class="tzs">挑战赛</b>
+    <el-row gutter="20">
+      <el-col span="12">
+        <el-card>
+          <a href="https://www.skypixel.com/officer_aggregation/202" style="text-decoration: none">
+
+            <img
+                    src="https://sp-webfront-cn.oss-cn-hangzhou.aliyuncs.com/skypixel/v2/public/website/assets/1663756440011-abad20057f5447f39805ccb9af03a14b.jpg"
+                    width="100%">
+          </a>
+        </el-card>
+      </el-col>
+      <el-col span="12">
+        <el-card id="onecard">
+          <img style="visibility: hidden ;"
+               src="https://sp-webfront-cn.oss-cn-hangzhou.aliyuncs.com/skypixel/v2/public/website/assets/1663756440011-abad20057f5447f39805ccb9af03a14b.jpg"
+               width="100%">
+
+          <input type="button" id="osmoaction" value="Osmo Action 硬核玩家挑战赛" @click="osmoactionclick()">
+
+        </el-card>
+      </el-col>
+    </el-row>
+
+
+    <!--        往期活动-->
+    <b class="jxz">往期活动</b>
+    <b class="tzs">新品体验官</b>
+    <el-row gutter="20" >
+      <el-col span="8" v-for=" item in newgood">
+        <el-card>
+          <a :href="item.myhref" style="text-decoration: none" >
+            <img :src= "item.img"
+                 width="100%">
+            <p style="text-decoration: none">{{item.title}}</p>
+          </a>
+        </el-card>
+      </el-col>
+    </el-row>
+
+
+
+    <b class="tzs">原创作品征集</b>
+    <el-row gutter="20" >
+      <el-col span="8" v-for=" item in newproducts">
+        <el-card>
+          <a :href="item.myhref" style="text-decoration: none" >
+            <img :src= "item.img"
+                 width="100%">
+            <p style="text-decoration: none">{{item.title}}</p>
+          </a>
+        </el-card>
+      </el-col>
+    </el-row>
+
+
+
+
+
+
+    <b class="tzs">年度大赛</b>
+    <el-row gutter="20" >
+      <el-col span="8" v-for=" item in games">
+        <el-card>
+          <a :href="item.myhref" style="text-decoration: none" >
+            <img :src= "item.img"
+                 width="100%">
+            <p style="text-decoration: none">{{item.title}}</p>
+          </a>
+        </el-card>
+      </el-col>
+    </el-row>
+
+  </div>
+
+</div>
+</body>
+
+<!-- import Vue before Element -->
+<script src="https://cdn.staticfile.org/vue/2.6.14/vue.min.js"></script>
+<script>
+  window.onload = function () {
+    var atr = document.getElementById("searchinput");
+    atr.onmouseover = function () {
+
+      document.querySelector('#searchinput').setAttribute('style', 'border:none')
+      document.querySelector('#searchinput').setAttribute('style', 'background-color:grey')
+      document.querySelector('#searchinput').focus()
+
+
+    }
+    atr.onmouseout = function () {
+      document.querySelector('#searchinput').blur()
+      document.querySelector('#searchinput').setAttribute('style', 'border:none')
+      document.querySelector('#searchinput').setAttribute('style', 'background-color:#000000')
+    }
+  }
+</script>
+<script src="https://cdn.staticfile.org/element-ui/2.15.9/index.min.js"></script>
+<script>
+  let v = new Vue({
+    el: '#app',
+    data: function () {
+      return {
+        user: {username: "", password: ""},
+        newgood:[
+          {
+            title:"新品体验官招募-Osmo Mobile 6",
+            img:  "https://sp-webfront-cn.oss-cn-hangzhou.aliyuncs.com/skypixel/v2/public/website/assets/1670829524068-d8bd05e4b46f75e4feab258e12722662.jpg",
+            myhref:"https://www.skypixel.com/product-experience-officer/306"
+          },
+          {
+            title:"新品体验官招募-Osmo Action 3",
+            img:"https://sp-webfront-cn.oss-cn-hangzhou.aliyuncs.com/skypixel/v2/public/website/assets/1663754137412-9a7d2ed745a1728594d5ee7ffc436fcd.jpg"
+            ,
+            myhref:"https://www.skypixel.com/product-experience-officer/202"
+          },
+          {
+            title:"新品体验官招募-DJI Avata",
+            img: "https://sp-webfront-cn.oss-cn-hangzhou.aliyuncs.com/skypixel/v2/public/website/assets/1663754070266-7eaf6d10be4967874c67c1ce6204b3ea.jpg"
+            ,
+            myhref:"https://www.skypixel.com/product-experience-officer/169"
+          },
+          {
+            title:"新品体验官招募-DJI Mini 3 Pro",
+            img:"https://sp-webfront-cn.oss-cn-hangzhou.aliyuncs.com/skypixel/v2/public/website/assets/1663754079221-8f0c9e133581c5e44f4c8e3fa5eb57c0.jpg"
+            ,
+            myhref:"https://www.skypixel.com/product-experience-officer/162"
+          },
+        ],
+
+
+
+
+        newproducts:[
+          {
+            title:"DJI MAVIC 巅峰之旅",
+            img:  "https://sp-webfront-cn.oss-cn-hangzhou.aliyuncs.com/skypixel/v2/public/website/assets/1670398360394-92ec16842f3e0f1138aae8a0f72e9e2a.jpg"
+            ,
+            myhref:"https://www.skypixel.com/tags/dji-mavic-6b8c273f-e401-41e2-a4d3-3aaf3165a446"
+          },
+          {
+            title:"天生会飞 大疆飞行挑战赛",
+            img:"https://sp-webfront-cn.oss-cn-hangzhou.aliyuncs.com/skypixel/v2/public/website/assets/1670483012864-ccb8942d624123be6ec77204893df863.jpeg"
+            ,
+            myhref:"https://www.skypixel.com/tags/29d7e717-e0cd-4089-9acb-6e7c0dd8bfb1"
+          },
+          {
+            title:"DJI Mini 3 Pro 原创作品征集",
+            img:"https://sp-webfront-cn.oss-cn-hangzhou.aliyuncs.com/skypixel/v2/public/website/assets/1663754137412-9a7d2ed745a1728594d5ee7ffc436fcd.jpg"
+            ,
+            myhref:"https://www.skypixel.com/tags/dji-mini-3-pro"
+          },
+          {
+            title:"普通视角 VS 航拍视角",
+            img:"https://sp-webfront-cn.oss-cn-hangzhou.aliyuncs.com/skypixel/v2/public/website/assets/1670481724766-c6b9e3fe3bf8eb0d424ed251804137b8.jpeg"
+            ,
+            myhref:"https://www.skypixel.com/tags/vs-43343a82-f0ab-4b89-9f93-cac348d359a9"
+          },
+        ],
+
+
+
+
+
+
+
+
+        games:[
+          {
+            title:"天空之城 7 周年航拍大赛",
+            img:  "https://sp-webfront-cn.oss-cn-hangzhou.aliyuncs.com/skypixel/v2/public/website/assets/1658416676049-3a11b97f433004066a93e58f11441c5b.jpg"
+            ,
+            myhref:"https://www.skypixel.com/contests/2021"
+          },
+          {
+            title:"天空之城 6 周年航拍大赛",
+            img:"https://sp-webfront-cn.oss-cn-hangzhou.aliyuncs.com/skypixel/v2/public/website/assets/1658416844055-69689c2aa712f65f7b63afe6ea2a5155.jpg"
+            ,
+            myhref:"https://www.skypixel.com/contests/2019"
+          },
+          {
+            title:"天空之城 6 周年航拍大赛",
+            img:"https://sp-webfront-cn.oss-cn-hangzhou.aliyuncs.com/skypixel/v2/public/website/assets/1658417095275-474eb5b1f366a5355fc86c30a0370fb1.jpg"
+            ,
+            myhref:"https://www.skypixel.com/contests/2020"
+          },
+
+        ],
+
+
+
+
+        tzsarr: ["https://sp-webfront-cn.oss-cn-hangzhou.aliyuncs.com/skypixel/v2/public/website/assets/1663756440011-abad20057f5447f39805ccb9af03a14b.jpg", ""]
+      }
+    },
+    methods: {
+      detailclick() {
+        location.href = "https://www.skypixel.com/product-experience-officer/720?from=activities-banner_720";
+      },
+
+
+      regislick() {
+        alert("regislick")
+      },
+
+      loginclick() {
+        alert("loginclick")
+      },
+
+      navfunc(a) {
+        location.href = "./03-tabs/labelPage.html";
+
+      },
+      osmoactionclick(){
+        location.href = "https://www.skypixel.com/officer_aggregation/202";
+
+      }
+
+    }
+  })
+</script>
+
+
+</html>

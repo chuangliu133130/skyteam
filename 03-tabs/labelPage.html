@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- import CSS -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/element-ui/2.15.9/theme-chalk/index.css">
+  <style>
+    .el-table .el-table__cell{
+      padding: 0;/*去掉自带的内边距*/
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+
+  <div style="width: 1200px;margin: 60px auto">
+    <el-tabs v-model="activeName" @tab-click="handleClick" stretch>
+      <el-tab-pane label="题材" name="first">
+        <!-- 图片列表 -->
+        <el-row gutter="10">
+          <el-col span="12" v-for="t in themeArr">
+            <a href="">
+              <el-card>
+                <img :src="t.url1" width="50%" height="208" >
+                <img :src="t.url2" width="25%" height="104">
+                <img :src="t.url3" width="25%" height="104">
+
+                <p style="font-weight: bold"><b>{{t.name}}</b></p>
+              </el-card>
+            </a>
+
+          </el-col>
+        </el-row>
+
+      </el-tab-pane>
+
+      <el-tab-pane label="风格" name="second">风格</el-tab-pane>
+      <el-tab-pane label="设备" name="third">设备</el-tab-pane>
+      <el-tab-pane label="地区" name="fourth">地区</el-tab-pane>
+    </el-tabs>
+  </div>
+
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://cdn.staticfile.org/vue/2.6.14/vue.min.js"></script>
+<!-- import JavaScript -->
+<script src="https://cdn.staticfile.org/element-ui/2.15.9/index.min.js"></script>
+<script>
+ let v = new Vue({
+    el: '#app',
+    data: function() {
+      return {
+        activeName: 'first',
+        themeArr:[{name:"旅行",url1:"imgs/a.jpg",url2:"imgs/b.jpg",url3:"imgs/c.jpg"},
+          {name:"无人机",url1:"imgs/a.jpg",url2:"imgs/b.jpg",url3:"imgs/c.jpg"},
+          {name:"城市",url1:"imgs/a.jpg",url2:"imgs/b.jpg",url3:"imgs/c.jpg"},
+          {name:"留住这一刻",url1:"imgs/a.jpg",url2:"imgs/b.jpg",url3:"imgs/c.jpg"},
+          {name:"夜景",url1:"imgs/a.jpg",url2:"imgs/b.jpg",url3:"imgs/c.jpg"},
+          {name:"天空",url1:"imgs/a.jpg",url2:"imgs/b.jpg",url3:"imgs/c.jpg"},
+          {name:"山峰",url1:"imgs/a.jpg",url2:"imgs/b.jpg",url3:"imgs/c.jpg"}]
+      }
+    },
+   methods:{
+     handleClick(tab, event) {
+       console.log(tab, event);
+     }
+   }
+  })
+</script>
+</html>

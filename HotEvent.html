@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/element-ui/2.15.9/theme-chalk/index.css">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #headdiv {
+            margin: 0px;
+            padding: 0px;
+            width: 1242px;
+            height: 60px;
+            background-color: #000000;
+            margin: 0px auto;
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        #navImg {
+            margin-top: 21px;
+            margin-left: 20px;
+            width: 96px;
+            height: 18px;
+            vertical-align: middle;
+            margin-right: 30px;
+
+        }
+
+        #topmenu {
+            float: right;
+            right: 100px;
+            position: relative;
+
+        }
+
+        .toptitlemenu {
+            text-decoration: none;
+            color: lightgray;
+            font-size: 13px;
+            line-height: 60px;
+            margin-right: 10px;
+        }
+
+        .toptitlemenu:hover {
+            color: white;
+        }
+
+        #firstnav {
+            margin-left: 30px;
+        }
+
+        #searchinput {
+            width: 160px;
+            height: 30px;
+            border: none;
+            outline: none;
+            border-radius: 15px;
+            float: right;
+            right: 80px;
+            margin-top: 15px;
+            background-color: #000000;
+            position: relative;
+            color: white;
+        }
+
+        #sousuo {
+            position: absolute;
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            float: right;
+            right: 95px;
+            display: inline-block;
+            top: 20px;
+
+        }
+
+        #sousuo:hover {
+
+        }
+
+        #hotimg {
+            width: 40px;
+            height: 30px;
+            vertical-align: middle;
+        }
+
+        #loginbtn {
+            width: 80px;
+            height: 60px;
+            background-color: white;
+            color: lightgray;
+            background-color: #000000;
+            float: right;
+            right: 80px;
+            position: absolute;
+            border: none;
+
+        }
+
+        #aregisbtn:hover {
+            color: white;
+
+        }
+
+        #loginbtn:hover {
+            color: white;
+
+        }
+
+        #aregisbtn {
+            border: none;
+            width: 80px;
+            height: 60px;
+            background-color: white;
+            color: lightgray;
+            background-color: #000000;
+            float: right;
+            right: 20px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <div id="headdiv">
+        <img id="navImg" src="https://spcn-webfront.skypixel.com/skypixel/v2/public/assets/images/logo-cn.00c32c62.svg"
+             alt="">
+
+
+        <el-menu id="topmenu" style="width: 1000px;margin: 0 auto;border: 0" mode="horizontal"
+                 background-color="#000000"
+                 text-color="#fff" active-text-color="#fff">
+
+
+            <a id="firstnav" class="toptitlemenu" href="javascript:void(0)" @click="navfunc(1)">首页</a>
+            <a class="toptitlemenu" href="javascript:void(0)" @click="navfunc(2)">搜索</a>
+            <a class="toptitlemenu" href="javascript:void(0)" @click="navfunc(3)">标签</a>
+            <a class="toptitlemenu" href="javascript:void(0)" @click="navfunc(4)">摄影师</a>
+            <a class="toptitlemenu" href="javascript:void(0)" @click="navfunc(5)">签约摄影师招募</a>
+            <a class="toptitlemenu" href="javascript:void(0)" @click="navfunc(6)">热门活动</a>
+            <a class="toptitlemenu" href="javascript:void(0)" @click="navfunc(7)">天空之城8周年摄影大赛</a>
+
+            <img id="hotimg"
+                 src="https://spcn-webfront.skypixel.com/skypixel/v2/public/assets/images/hot-tag.77bd1bdf.svg" alt="">
+
+            <input type="text" id="searchinput">
+            <img id="sousuo" src="./img/sousuo.png" alt="">
+        </el-menu>
+        <input type="button" id="loginbtn" value="登陆" @click="loginclick()">
+        <input type="button" id="aregisbtn" value="注册" @click="regislick()">
+    </div>
+
+
+</div>
+</body>
+
+<!-- import Vue before Element -->
+<script src="https://cdn.staticfile.org/vue/2.6.14/vue.min.js"></script>
+<script>
+    window.onload = function () {
+        var atr = document.getElementById("searchinput");
+        atr.onmouseover = function () {
+            document.querySelector('#searchinput').setAttribute('style', 'border:none')
+
+            document.querySelector('#searchinput').setAttribute('style', 'background-color:grey')
+            document.querySelector('#searchinput').focus()
+
+        }
+        atr.onmouseout = function () {
+            document.querySelector('#searchinput').blur()
+            document.querySelector('#searchinput').setAttribute('style', 'border:none')
+            document.querySelector('#searchinput').setAttribute('style', 'background-color:#000000')
+        }
+    }
+</script>
+<script src="https://cdn.staticfile.org/element-ui/2.15.9/index.min.js"></script>
+<script>
+    let v = new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                user: {username: "", password: ""}
+            }
+        },
+        methods: {
+
+            regislick() {
+                alert("regislick")
+            },
+
+            loginclick() {
+                alert("loginclick")
+            },
+
+            navfunc(a) {
+                location.href = "https://www.baidu.com/";
+
+            }
+        }
+    })
+</script>
+
+<!--<script type="text/javascript">function intext() {document.all("searchinput").focus();}</script>-->
+
+</html>
